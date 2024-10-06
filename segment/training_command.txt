@@ -1,0 +1,1 @@
+python segment/train.py --workers 8 --device 0 --batch 32 --data C:\Users\aiotl\Documents\pork_cut\yolo_dataset\pork_datasets_V2\dataset.yaml --img 640 --cfg "" --weights models/gelan-c-seg.pt --name pork_detection_V2 --hyp hyp.scratch-high.yaml --no-overlap --epochs 300 --close-mosaic 10

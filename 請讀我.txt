@@ -1,0 +1,20 @@
+需先安裝套件
+檢查是否有cuda
+nvidia-smi
+如果沒有看到CUDA Version，代表尚未安裝CUDA
+https://developer.download.nvidia.com/compute/cuda/12.4.1/local_installers/cuda_12.4.1_551.78_windows.exe
+
+環境安裝
+如果有conda:
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+如果沒有conda:
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+執行完畢請安裝requirements(要在該目錄下執行)
+pip install -r requirements.txt
+
+快速上手
+python main_V1.py --input_path your_img.png
+
+其他詳細參數請見help
+python main_V1.py --help
