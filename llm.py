@@ -38,6 +38,7 @@ class llm:
         # save to json
         with open(f"{self.save_dir}/{api_token}.json", "w", encoding="utf-8") as f:
             json.dump(messages, f, ensure_ascii=False, indent=4)
+            
         return assistant_response, api_token
     
 def main():
